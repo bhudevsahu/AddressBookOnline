@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>AddressBook</display-name>
+  <servlet>
+    <description>
+		</description>
+    <display-name>BookServlet</display-name>
+    <servlet-name>BookServlet</servlet-name>
+    <servlet-class>
+		Servlet.BookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookServlet</servlet-name>
+    <url-pattern>/BookServlet</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <description>
+		</description>
+    <display-name>BookLogoutServlet</display-name>
+    <servlet-name>BookLogoutServlet</servlet-name>
+    <servlet-class>
+		Servlet.BookLogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookLogoutServlet</servlet-name>
+    <url-pattern>/BookLogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description>
+		</description>
+    <display-name>BookAjaxServlet</display-name>
+    <servlet-name>BookAjaxServlet</servlet-name>
+    <servlet-class>
+		Servlet.BookAjaxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookAjaxServlet</servlet-name>
+    <url-pattern>/BookAjaxServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
